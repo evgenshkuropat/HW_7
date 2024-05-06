@@ -1,0 +1,230 @@
+:root {
+    --accent-color: #46A358;
+    --secondary-color: #3D3D3D;
+    --main-color: #FFFFFF;
+    --bg-secondary-color: #FBFBFB;
+
+    --font-sm: 14px;
+    --font-md: 16px;
+    --font-xl: 18px;
+
+    --content-width: 1300px;
+
+    --categories-menu-width: 310px;
+    --catalog-gap: 50px;
+    --categories-menu-full-width: calc(var(--categories-menu-width) + var(--catalog-gap));
+}
+
+body {
+    font-family: 'Cera Pro DEMO', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: var(--font-md);
+}
+
+a {
+    font-size: var(--font-md);
+    color: var(--secondary-color);
+    display: inline-block;
+}
+
+.container {
+    max-width: var(--content-width);
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.catalog {
+    margin-top: 20px;
+}
+
+.catalog__content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.catalog__categories {
+    background-color: var(--bg-secondary-color);
+    margin-right: var(--catalog-gap);
+    padding: 15px;
+}
+
+.catalog__categories h4 {
+    font-size: var(--font-xl);
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.catalog__categories a.active {
+    color: var(--accent-color);
+}
+
+.catalog__categories ul {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.catalog__products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.catalog__product-group {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.catalog__product {
+    width: calc(33.33% - 20px);
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.catalog__product-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.catalog__product-title,
+.catalog__product-price {
+    text-align: center;
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+}
+.sort-by {
+    margin-left: auto;
+}
+.filter-button {
+    width: 16px;
+    height: 16px;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    padding: 0;
+}
+.menu_active {
+    color: var(--accent-color);
+}
+.pagination {
+    text-align: right;
+    margin-top: 20px;
+}
+
+.page-button {
+    width: 35px;
+    height: 35px;
+    background-color: transparent;
+    color: black;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    margin: 0 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    margin-bottom: 20px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.page-button:hover {
+    background-color: rgba(70, 163, 88, 0.1);
+}
+
+.page-button:first-child {
+    background-color: #46A358;
+    color: #FFFFFF;
+}
+
+.page-button:nth-child(n+2) {
+    opacity: 0.5;
+}
+
+.page-button:first-child:hover {
+    background-color: #3D854D;
+}
+
+
+.page-button:hover {
+    background-color: #3D854D;
+}
+nav {
+    width: 85%;
+}
+.dropbtn {
+    background-color: transparent;
+    color: black;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.dropdown:hover .dropbtn {
+    background-color: #f9f9f9;
+}
+.sort-by-btn {
+    background-color: transparent;
+    color: black;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.sort-by:hover .dropdown-content {
+    display: block;
+}
+.sort-by:hover .sort-by-btn {
+    background-color: #f9f9f9;
+}
+.sort-by-text {
+    margin-right: 10px;
+}
