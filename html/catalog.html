@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -11,14 +12,18 @@
     <title>Catalog</title>
 </head>
 <body>
+<header>
+    <!--    Header goes here -->
+</header>
+
 
 <main>
     <section class="catalog">
         <div class="container">
             <div class="catalog__content">
                 <div class="catalog__categories">
-                    <h4>Categories</h4>
                     <nav>
+                        <h4>Categories</h4>
                         <ul>
                             <li><a href="#" class="active">House Plants</a></li>
                             <li><a href="#">Potter Plants</a></li>
@@ -31,29 +36,36 @@
                             <li><a href="#">Accessories</a></li>
                         </ul>
                     </nav>
+
+                    <div class="sale__banner">
+                        <img src=".././assets/products/product-img-ss.png" alt=sale_banner>
+                    </div>
                 </div>
-                <nav class="menu">
-                    <ul>
-                        <li><a href="#" class="menu_item menu_active">All Plants</a></li>
-                        <li><a href="#" class="menu_item">New Arrivals</a></li>
-                        <li><a href="#" class="menu_item">Sale</a></li>
-                        <li class="sort-by">
-                            <div class="dropdown">
-                                    Sort by: Default sorting <button class="dropbtn"> <img src="./../iconfonts/iconbutton1.png" alt="Sort icon">
-                                </button>
-                                <div class="dropdown-content">
-                                    <a href="#">Option 1</a>
-                                    <a href="#">Option 2</a>
-                                    <a href="#">Option 3</a>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                </nav>
+
                 <div class="catalog__products">
+
+                    <div class="search__menu">
+                        <div class="search__url">
+                            <a href="#" class="active">All plants</a>
+                            <a href="#">New Arrivals</a>
+                            <a href="#">All Sale</a>
+                        </div>
+
+                        <div class="search__list">
+                            <form>
+                                <label for="list_search">Short by:</label>
+                                <select id="list_search" name="list_search">
+                                    <option value="menu_item">Default sorting</option>
+                                    <option value="menu_item">Option 1</option>
+                                    <option value="menu_item">Option 2</option>
+                                </select>
+                            </form>
+                        </div>
+                    </div>
+
                     <div class="catalog__product">
                         <div class="catalog__product-image">
-                            <img src="./../assets/products/product-img-1.png" alt="product_1">
+                            <img src="./../assets/products/product-img-1.png" alt="product1">
                         </div>
                         <div class="catalog__product-title">
                             <h6>Barberton Daisy</h6>
@@ -61,8 +73,10 @@
                         <div class="catalog__product-price">
                             $119.00
                         </div>
+                    </div>
+                    <div class="catalog__product">
                         <div class="catalog__product-image">
-                            <img src="./../assets/products/product-img-2.png" alt="product_2">
+                            <img src="./../assets/products/product-img-2.png" alt="product2">
                         </div>
                         <div class="catalog__product-title">
                             <h6>Angel Wing Begonia</h6>
@@ -70,8 +84,10 @@
                         <div class="catalog__product-price">
                             $169.00
                         </div>
+                    </div>
+                    <div class="catalog__product">
                         <div class="catalog__product-image">
-                            <img src="./../assets/products/product-img-3.png" alt="product_3">
+                            <img src="./../assets/products/product-img-3.png" alt="product3">
                         </div>
                         <div class="catalog__product-title">
                             <h6>African Violet</h6>
@@ -79,8 +95,10 @@
                         <div class="catalog__product-price">
                             $199.00
                         </div>
+                    </div>
+                    <div class="catalog__product">
                         <div class="catalog__product-image">
-                            <img src="./../assets/products/product-img-4.png" alt="product_4">
+                            <img src="./../assets/products/product-img-4.png" alt="product4">
                         </div>
                         <div class="catalog__product-title">
                             <h6>Beach Spider Lily</h6>
@@ -88,8 +106,10 @@
                         <div class="catalog__product-price">
                             $129.00
                         </div>
+                    </div>
+                    <div class="catalog__product">
                         <div class="catalog__product-image">
-                            <img src="./../assets/products/product-img-5.png" alt="product_5">
+                            <img src="./../assets/products/product-img-5.png" alt="product5">
                         </div>
                         <div class="catalog__product-title">
                             <h6>Blushing Bromeliad</h6>
@@ -97,8 +117,10 @@
                         <div class="catalog__product-price">
                             $139.00
                         </div>
+                    </div>
+                    <div class="catalog__product">
                         <div class="catalog__product-image">
-                            <img src="./../assets/products/product-img-6.png" alt="product_6">
+                            <img src="./../assets/products/product-img-6.png" alt="product6">
                         </div>
                         <div class="catalog__product-title">
                             <h6>Aluminum Plant</h6>
@@ -106,8 +128,10 @@
                         <div class="catalog__product-price">
                             $179.00
                         </div>
+                    </div>
+                    <div class="catalog__product">
                         <div class="catalog__product-image">
-                            <img src="./../assets/products/product-img-7.png" alt="product_7">
+                            <img src="./../assets/products/product-img-7.png" alt="product7">
                         </div>
                         <div class="catalog__product-title">
                             <h6>Bird's Nest Fern</h6>
@@ -115,8 +139,10 @@
                         <div class="catalog__product-price">
                             $99.00
                         </div>
+                    </div>
+                    <div class="catalog__product">
                         <div class="catalog__product-image">
-                            <img src="./../assets/products/product-img-8.png" alt="product_8">
+                            <img src="./../assets/products/product-img-8.png" alt="product8">
                         </div>
                         <div class="catalog__product-title">
                             <h6>Broadleaf Lady Palm</h6>
@@ -124,8 +150,10 @@
                         <div class="catalog__product-price">
                             $59.00
                         </div>
+                    </div>
+                    <div class="catalog__product">
                         <div class="catalog__product-image">
-                            <img src="./../assets/products/product-img-9.png" alt="product_9">
+                            <img src="./../assets/products/product-img-9.png" alt="product9">
                         </div>
                         <div class="catalog__product-title">
                             <h6>Chinese Evergreen</h6>
@@ -133,20 +161,25 @@
                         <div class="catalog__product-price">
                             $39.00
                         </div>
+                    </div>
+                </div>
+                <div class="pagination">
+                    <button class="page-button">1</button>
+                    <button class="page-button">2</button>
+                    <button class="page-button">3</button>
+                    <button class="page-button">4</button>
+                    <button class="page-button arrow">&gt;</button>
                 </div>
             </div>
         </div>
+    </section>
+
 </main>
 
 <footer>
-    <div class="pagination">
-        <button class="page-button">1</button>
-        <button class="page-button">2</button>
-        <button class="page-button">3</button>
-        <button class="page-button">4</button>
-        <button class="page-button arrow">&gt;</button>
-    </div>
+    <!--    Footer goes here-->
 </footer>
+
 
 </body>
 </html>
